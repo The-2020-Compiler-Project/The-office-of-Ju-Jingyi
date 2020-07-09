@@ -1,0 +1,61 @@
+struct stu
+{
+    int q1;
+    char q2;
+}
+
+
+
+
+function
+int fun(char m1,char m2)
+{
+    int d;
+    begin
+        if(m1>m2)
+        {
+            begin
+                d=1+2;
+                return d;
+            end
+        }
+        else
+        {
+            begin
+                d=3+4;
+                return d;
+            end
+        }
+    return 0;
+    end
+}
+
+
+
+
+function
+int main()
+{
+    int a,a1;
+    char b,c;
+    struct stu student1,student2;
+    begin
+        for(a=1;a<a1;a=a+1;)
+        {
+               begin
+                   while(a==a1)
+                   {
+                       begin
+                           student1.q1=a+1;
+                           break;
+                       end
+                   }
+               continue;
+               end
+        }
+    a=student1.q1;
+    F_CALL a1=fun(b,c);
+    return 0;
+    end
+}
+PROGRAM_END

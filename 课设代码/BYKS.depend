@@ -1,0 +1,111 @@
+# depslib dependency file v1.0
+1545546442 source:d:\±àÒë¿ÎÉè\byks\analyse.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	"data.h"
+	<fstream>
+	<cstring>
+	<math.h>
+
+1545543115 d:\±àÒë¿ÎÉè\byks\data.h
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+
+1545527843 source:d:\±àÒë¿ÎÉè\byks\cx1.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	"data.h"
+
+1545529988 source:d:\±àÒë¿ÎÉè\byks\cx2.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	"data.h"
+
+1545528725 source:d:\±àÒë¿ÎÉè\byks\cx3.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	"data.h"
+
+1545530497 source:d:\±àÒë¿ÎÉè\byks\cx4.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	"data.h"
+
+1545527843 source:d:\±àÒë¿ÎÉè\byks\cx5.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	"data.h"
+
+1545527843 source:d:\±àÒë¿ÎÉè\byks\cx6.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	<sstream>
+	"data.h"
+
+1545490386 source:d:\±àÒë¿ÎÉè\byks\digui.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	"data.h"
+
+1545546604 source:d:\±àÒë¿ÎÉè\byks\main.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	"data.h"
+
+1545535864 source:d:\±àÒë¿ÎÉè\byks\solve(1).cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	<sstream>
+	"data.h"
+
+1545535635 source:d:\±àÒë¿ÎÉè\byks\youhua.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	<sstream>
+	"data.h"
+
+1545712631 source:d:\±àÒë¿ÎÉè\byks\yh.cpp
+	<iostream>
+	<stack>
+	<stdlib.h>
+	<stdio.h>
+	<string>
+	<sstream>
+	"data.h"
+

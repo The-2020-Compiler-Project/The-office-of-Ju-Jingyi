@@ -1,0 +1,99 @@
+文法：
+<Program>->function<Func_Definition><Program>|PROGRAM_END|<Struct_Definition><Program>
+<Func_Definition>-><Type>id{func()}(<T0>{func_end()}
+<T0>->){<Sub_Program>}|<Para_List>){<Sub_Program>}
+<Para_List>-><Type>id{par()}<T1>
+<T1>->,<Type>id{par()}<T1>|null
+<Sub_Program>-><Var><Statement>
+<Var>->begin|<Type><Var_Name>;<Var>
+<Type>->int{push()}|char{push()}|bool{push()}|void{push()}|struct id{push()}
+<Var_Name>->id{Var()}<T3>
+<T3>->,id{Var()}<T3>|null
+<Statement>-><Operation><T2>
+<T2>->end|<Operation><T2>
+<Operation>-><Ass_Statement>|<If>|<While>|<Re_Statement>|<For>|<Func_Call>|<Break>|<Continue>
+<Ass_Statement>->id{push()}=<Expression>;{=()}
+<Expression>-><Item><T4>
+<T4>->w0{push()}<Item><T4>{geq()}|null
+<Item>-><Factor><T5>
+<T5>->w1{push()}<Factor><T5>{geq()}|null
+<Factor>->(<Expression>)|<Cal_Number>
+<Cal_Number>->id{push()}|constant{push()}
+<Break>->break;
+<Continue>->continue;
+
+
+<If>->if<If_Statement>{If()}{<Sub_Program>}{if_end()}<Else>
+<Else>->else{else()}{<Sub_Program>}{else_end()}|null
+<If_Statement>->id{push()}w2{push()}id{push()}{ifs()}
+
+<Re_Statement>->return<Expression>;{return()}
+<While>->while{While()}(<If_Statement>){<Sub_Program>}{while_end()}
+<For>->for(<For_Statement>){For()}{<Sub_Program>}
+<For_Statement>-><Ass_Statement><If_Statement>;<Ass_Statement>
+
+<Func_Call>->F_CALLid<T6>
+<T6>->=id(<T7>|(<T7>
+<T7>->);|id<T8>);
+<T8>->,id<T8>|null
+
+
+<Struct_Definition>->struct id{<Struct_Content>
+<Struct_Content>->}|<Type>id;<Struct_Content>
+
+
+
+w0 {+,-}
+w1 {*,/}
+w2 {>,<,==,>=,<=,!=}
+
+Porgram          程序
+Sub_Program      分程序
+Func_Definition  函数定义
+Type             类型
+Para_List        参数列表
+Statement        语句
+Var              变量
+Var_Name         变量名
+Operation        操作
+Ass_Statement    赋值
+Expression       表达式
+Item             项
+Factor           因子
+contstant        常数
+Cal_Number       算术量
+
+关键字表
+struct KTD{
+    string keyword;
+}KT[];
+界符表
+struct PTD{
+    string delimiter;
+}PT[];
+struct SYNBLD{
+    string NAME;
+    int TYPE;
+    string CAT;
+    int ADDR;
+}SYNBL[];
+struct TYPELD{
+    string TYPE;
+    double ZHI;
+    int ADDR;
+}TYPEL[];
+struct PFINFLD{
+    string RE_TYPE;
+    int PAR_ADDR;
+}PFINFL[];
+struct PARAD{
+    string TYPE;
+    string NAME;
+}PARA[];
+struct QTD{
+    string str1;
+    string str2;
+    string str3;
+    string str4;
+}QT[];
+stack<string>str;
